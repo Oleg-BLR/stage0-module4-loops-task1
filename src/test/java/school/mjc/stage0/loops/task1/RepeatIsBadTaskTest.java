@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class RepeatIsBadTaskTest extends BaseIOTest {
+class RepeatIsBadTaskTest extends BaseIOTest {
 
     @Test
     void repeatIsBad() {
@@ -28,7 +28,7 @@ public class RepeatIsBadTaskTest extends BaseIOTest {
     }
 
     @Test
-    public void containsNoLoopsOrSteams() throws IOException {
+    void containsNoLoopsOrSteams() throws IOException {
         Path path = Paths.get("src/main/java/school/mjc/stage0/loops/task1/RepeatIsBad.java");
         List<String> strings = Files.readAllLines(path);
 
